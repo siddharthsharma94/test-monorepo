@@ -2,11 +2,11 @@ import { Button } from "ui";
 import { useHelloQuery } from "../src/store/services/api";
 
 export default function Web() {
-  const { data } = useHelloQuery();
+  // const { data } = useHelloQuery();
 
   return (
     <div>
-      <h1>{data?.message}</h1>
+      <h1>Hello World!</h1>
       <Button />
     </div>
   );

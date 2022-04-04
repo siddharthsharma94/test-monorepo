@@ -11,8 +11,8 @@ module.exports = {
     prepare: {
       default: `nps prepare.web prepare.api`,
       web: `yarn`,
-      api: `nps prepare.docker prisma.migrate.dev`,
-      docker: "docker-compose up -d",
+      api: `nps prisma.migrate.dev`,
+      // docker: "docker-compose up -d",
       ci: {
         web: `npx turbo prune --scope=web && cd out && yarn install --frozen-lockfile`,
         api: `npx turbo prune --scope=api && cd out && yarn install --frozen-lockfile && nps prisma.generate`,
@@ -47,13 +47,13 @@ module.exports = {
         api: "cd out && npm run build",
       },
     },
-    docker: {
-      build: {
-        default: "nps docker.build.web docker.build.api",
-        web: `docker build -t web . -f ${webPath}/Dockerfile`,
-        api: `docker build -t api . -f ${apiPath}/Dockerfile`,
-      },
-    },
+    // docker: {
+    //   build: {
+    //     default: "nps docker.build.web docker.build.api",
+    //     web: `docker build -t web . -f ${webPath}/Dockerfile`,
+    //     api: `docker build -t api . -f ${apiPath}/Dockerfile`,
+    //   },
+    // },
     dev: "npx turbo run dev",
   },
 };

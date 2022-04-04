@@ -1,20 +1,20 @@
 # Turborepo (NestJS + Prisma + NextJS + Tailwind + Typescript + Jest) Starter
 
-This is fullstack turborepo starter. It comes with the following features. 
+This is fullstack turborepo starter. It comes with the following features.
 
-- ✅ Turborepo 
-- ✅ Nestjs 
-    - ✅ Env Config with Validation  
-    - ✅ Prisma 
-- ✅ NextJS 
-    - ✅ Tailwind 
-    - ✅ Redux Toolkit Query 
-- ✅ Testing using Jest 
-- ✅ Github Actions 
-- ✅ Reverse Proxy using Nginx 
-- ✅ Docker Integration 
-- ✅ Postgres Database 
-- ✅ Package scripts using NPS 
+- ✅ Turborepo
+- ✅ Nestjs
+  - ✅ Env Config with Validation
+  - ✅ Prisma
+- ✅ NextJS
+  - ✅ Tailwind
+  - ✅ Redux Toolkit Query
+- ✅ Testing using Jest
+- ✅ Github Actions
+- ✅ Reverse Proxy using Nginx
+- ✅ Docker Integration
+- ✅ Postgres Database
+- ✅ Package scripts using NPS
 
 ## What's inside?
 
@@ -40,18 +40,23 @@ This turborepo has some additional tools already setup for you:
 - [Prettier](https://prettier.io) for code formatting
 
 ## Setup
+
 This starter kit is using turborepo and yarn workspaces for monorepo workflow.
 
-### Prerequisites 
-- Install nps by running 
+### Prerequisites
+
+- Install nps by running
+
 ```
 npm i -g nps
 ```
+
 - Make sure docker and docker-compose are
- installed. Refer to docs for your operating system.
+  installed. Refer to docs for your operating system.
 
 ### Install Dependencies
-Make sure you are at root of the project and just run 
+
+Make sure you are at root of the project and just run
 
 ```
 nps prepare
@@ -72,8 +77,9 @@ To develop all apps and packages, run the following command at the root of proje
 ```
 nps dev
 ```
+
 The app should be running at `http://localhost` with reverse proxy configured.
 
-
 ## Other available commands
-Run `nps` in the terminal to see list of all available commands. 
+
+Run `nps` in the terminal to see list of all available commands.
